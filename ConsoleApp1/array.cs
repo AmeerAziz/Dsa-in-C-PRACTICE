@@ -47,3 +47,19 @@ Console.WriteLine("The sum of marks is: " + sum);
 Console.WriteLine("The average mark is: " + (double)sum / marks.Length);
 
 
+// find the second maximum mark in the array
+int max = marks[0];
+int secondMax = marks[1];
+for (int i = 0; i < marks.Length; i++)
+{
+    if (marks[i] > max)
+    {
+        secondMax = max;
+        max = marks[i];
+    }
+    else if (marks[i] > secondMax && marks[i] != max)
+    {
+        secondMax = marks[i];
+    }
+}
+Console.WriteLine("The second maximum mark is: " + secondMax);
