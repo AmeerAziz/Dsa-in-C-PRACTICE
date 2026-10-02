@@ -63,3 +63,25 @@ for (int i = 0; i < marks.Length; i++)
     }
 }
 Console.WriteLine("The second maximum mark is: " + secondMax);
+
+// odd no of marks in the array
+Console.WriteLine("The odd marks are:");
+for (int i = 0; i < marks.Length; i++)
+{
+    if (marks[i] % 2 != 0)
+    {
+        Console.WriteLine(marks[i]);
+    }
+}
+
+
+// even no of marks in the array
+
+Console.WriteLine("The even marks are:");
+for (int i = 0; i < marks.Length; i++)
+{
+    if (marks[i] % 2 == 0)
+    {
+        Console.WriteLine(marks[i]);
+    }
+}
